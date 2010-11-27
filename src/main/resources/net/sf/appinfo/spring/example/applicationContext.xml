@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- the only bean required by AppInfo -->
+    <bean id="applicationTypeSpecificManifestReader" class="net.sf.appinfo.reader.JarManifestReader">
+        <!-- class from a JAR which is the application run from -->
+        <constructor-arg value="net.sf.appinfo.spring.example.AppInfoSpringExample"/>
+    </bean>
+
+</beans>

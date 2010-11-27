@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Default
+Built-By: szpak
+Build-Jdk: 1.6.0_18
+Specification-Title: AppInfo Spring Example (from defaultManifest.txt)
+Specification-Version: devel
+Build-Date: devel
+Build-Number: devel
+Host-Name: mszpak
+Job-Name: installer
+OS-Name: Linux
+SCM-Revision: devel
