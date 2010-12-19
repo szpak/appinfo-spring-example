@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.sf.appinfo</groupId>
     <artifactId>appinfo-spring-example</artifactId>
-    <version>0.5.0-SNAPSHOT</version>
+    <version>0.5.1-SNAPSHOT</version>
 
     <name>AppInfo Spring Example</name>
     <description>Simple example to show AppInfo usage in Spring based application</description>
@@ -33,9 +33,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
         <ver.spring>3.0.4.RELEASE</ver.spring>
         <ver.slf4j>1.6.1</ver.slf4j>
-        <appInfo.version>0.5.0</appInfo.version>
+        <appInfo.version>0.5.1</appInfo.version>
     </properties>
 
     <dependencies>
@@ -97,9 +98,9 @@
                             <!-- Variables set by Hudson -->
                             <Build-Number>${BUILD_NUMBER}</Build-Number>
                             <Build-Date>${BUILD_ID}</Build-Date>
+                            <SCM-Revision>${SVN_REVISION}</SCM-Revision>
                             <!-- Next two for potential usage in the next AppInfo versions -->
                             <Job-Name>${JOB_NAME}</Job-Name>
-                            <SCM-Revision>${SVN_REVISION}</SCM-Revision>
                         </manifestEntries>
                     </archive>
                 </configuration>

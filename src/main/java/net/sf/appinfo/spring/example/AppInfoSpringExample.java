@@ -21,7 +21,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * net.sf.appinfo.spring.example.AppInfoSpringExample
+ * Sample desktop application created to show how easy is usage of AppInfo library.
  *
  * @author Marcin Zajączkowski, 2010-10-31
  */
@@ -37,8 +37,12 @@ public class AppInfoSpringExample {
     }
 
     private void start() {
-        log.info("Welcome to AppInfo Spring Example");
         initSpringContext();
+        printWelcomeBanner();
+    }
+
+    private void printWelcomeBanner() {
+        log.info("Welcome to AppInfo Spring Example");
         printAppInfo();
     }
 
@@ -49,7 +53,7 @@ public class AppInfoSpringExample {
 
     private void initSpringContext() {
         context = new ClassPathXmlApplicationContext(
-                "classpath:net/sf/appinfo/spring/example/applicationContext.xml",
-                "classpath:net/sf/appinfo/appInfoDefaultContext.xml");
+            "classpath:net/sf/appinfo/spring/example/applicationContext.xml",   //configuration with application bean
+            "classpath:net/sf/appinfo/appInfoDefaultContext.xml");  //default configuration for AppInfo beans
     }
 }
