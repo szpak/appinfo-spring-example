@@ -36,7 +36,7 @@
         
         <ver.spring>3.0.4.RELEASE</ver.spring>
         <ver.slf4j>1.6.1</ver.slf4j>
-        <appInfo.version>0.5.1</appInfo.version>
+        <appInfo.version>0.5.2</appInfo.version>
     </properties>
 
     <dependencies>
