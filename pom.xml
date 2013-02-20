@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.sf.appinfo</groupId>
     <artifactId>appinfo-spring-example</artifactId>
-    <version>0.5.1-SNAPSHOT</version>
+    <version>0.5.2-SNAPSHOT</version>
 
     <name>AppInfo Spring Example</name>
     <description>Simple example to show AppInfo usage in Spring based application</description>
