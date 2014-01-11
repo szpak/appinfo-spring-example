@@ -49,11 +49,14 @@ public class AppInfoSpringExample {
     private void printAppInfo() {
         String appInfoText = context.getBean("appInfoText", String.class);
         log.info("The application info is: {}", appInfoText);
+        String customAppInfoText = context.getBean("customAppInfoText", String.class);
+        log.info("The custom application info is: {}", customAppInfoText);
     }
 
     private void initSpringContext() {
         context = new ClassPathXmlApplicationContext(
             "classpath:net/sf/appinfo/spring/example/applicationContext.xml",   //configuration with application bean
-            "classpath:net/sf/appinfo/appInfoDefaultContext.xml");  //default configuration for AppInfo beans
+            "classpath:net/sf/appinfo/appInfoDefaultContext.xml",  //default configuration for AppInfo beans
+            "classpath:net/sf/appinfo/spring/example/appInfoCustomFormatter.xml");  //additional AppInfo configuration with custom formatter
     }
 }
